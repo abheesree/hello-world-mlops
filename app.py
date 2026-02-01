@@ -7,7 +7,7 @@ app = Flask(__name__)
 MODEL_PATH = Path("artifacts/model.pkl")
 
 if not MODEL_PATH.exists():
-    # convenience: train if model missing
+    # convenience: train if model missing 
     import train as _train
     _train.main()
 
